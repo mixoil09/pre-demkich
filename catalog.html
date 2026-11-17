@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог номеров — Сладкие сны</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Сладкие сны</a>
+      <p class="slogan">Бронируйте сны мечты</p>
+      <nav class="nav">
+        <a href="catalog.html">Каталог</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Каталог номеров</h1>
+
+    <!-- Фильтр -->
+    <form class="filter" id="filterForm">
+      <label>
+        Категория:
+        <select name="category" id="filterCategory">
+          <option value="">Все</option>
+          <option value="standard">Стандартный</option>
+          <option value="studio">Студия</option>
+          <option value="lux">Люкс</option>
+        </select>
+      </label>
+      <button type="button" class="btn" id="applyFilter">Применить</button>
+      <button type="reset" class="btn btn--ghost" id="resetFilter">Сбросить фильтр</button>
+    </form>
+
+    <!-- Список номеров (6 случайных, здесь — статическая заглушка) -->
+    <section class="rooms" id="roomsList">
+      <article class="room" data-category="standard">
+        <img src="img/room1.jpg" alt="Стандартный номер" class="room__img">
+        <h2 class="room__title">Стандартный</h2>
+        <p class="room__price">3 500 ₽ / сутки</p>
+        <ul class="room__features">
+          <li>2 места</li>
+          <li>18 м²</li>
+          <li>Wi-Fi, ТВ, кондиционер</li>
+        </ul>
+        <a href="booking.html?room=1" class="btn btn--primary">Забронировать</a>
+      </article>
+
+      <article class="room" data-category="studio">
+        <img src="img/room2.jpg" alt="Студия" class="room__img">
+        <h2 class="room__title">Студия</h2>
+        <p class="room__price">5 200 ₽ / сутки</p>
+        <ul class="room__features">
+          <li>2 места</li>
+          <li>28 м²</li>
+          <li>Wi-Fi, ТВ, холодильник, кондиционер</li>
+        </ul>
+        <a href="booking.html?room=2" class="btn btn--primary">Забронировать</a>
+      </article>
+
+      <article class="room" data-category="lux">
+        <img src="img/room3.jpg" alt="Люкс" class="room__img">
+        <h2 class="room__title">Люкс</h2>
+        <p class="room__price">9 800 ₽ / сутки</p>
+        <ul class="room__features">
+          <li>3 места</li>
+          <li>45 м²</li>
+          <li>Wi-Fi, ТВ, холодильник, кондиционер, ванна</li>
+        </ul>
+        <a href="booking.html?room=3" class="btn btn--primary">Забронировать</a>
+      </article>
+
+      <article class="room" data-category="standard">
+        <img src="img/room4.jpg" alt="Стандартный номер" class="room__img">
+        <h2 class="room__title">Стандартный</h2>
+        <p class="room__price">3 200 ₽ / сутки</p>
+        <ul class="room__features">
+          <li>1 место</li>
+          <li>14 м²</li>
+          <li>Wi-Fi, ТВ</li>
+        </ul>
+        <a href="booking.html?room=4" class="btn btn--primary">Забронировать</a>
+      </article>
+
+      <article class="room" data-category="studio">
+        <img src="img/room5.jpg" alt="Студия" class="room__img">
+        <h2 class="room__title">Студия</h2>
+        <p class="room__price">5 500 ₽ / сутки</p>
+        <ul class="room__features">
+          <li>3 места</li>
+          <li>30 м²</li>
+          <li>Wi-Fi, ТВ, холодильник</li>
+        </ul>
+        <a href="booking.html?room=5" class="btn btn--primary">Забронировать</a>
+      </article>
+
+      <article class="room" data-category="lux">
+        <img src="img/room6.jpg" alt="Люкс" class="room__img">
+        <h2 class="room__title">Люкс</h2>
+        <p class="room__price">11 000 ₽ / сутки</p>
+        <ul class="room__features">
+          <li>4 места</li>
+          <li>55 м²</li>
+          <li>Wi-Fi, ТВ, холодильник, кондиционер, джакузи</li>
+        </ul>
+        <a href="booking.html?room=6" class="btn btn--primary">Забронировать</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div><strong>Адрес:</strong> г. Москва, ул. Сонная, д. 12</div>
+      <div><strong>Режим работы:</strong> круглосуточно</div>
+      <div><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></div>
+      <div><strong>E-mail:</strong> <a href="mailto:info@sweetdreams.ru">info@sweetdreams.ru</a></div>
+    </div>
+  </footer>
+
+  <script src="js/validation.js"></script>
+</body>
+</html>
